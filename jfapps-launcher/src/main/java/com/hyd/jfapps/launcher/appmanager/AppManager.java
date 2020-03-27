@@ -3,13 +3,16 @@ package com.hyd.jfapps.launcher.appmanager;
 import com.hyd.jfapps.appbase.GlobalContext;
 import com.hyd.jfapps.launcher.AppLoadingException;
 import com.hyd.jfapps.launcher.JarScanner;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 public class AppManager {
+
+    private final static Logger log = LoggerFactory.getLogger(AppManager.class);
 
     public static final GlobalContext GLOBAL_CONTEXT = new GlobalContext();
 

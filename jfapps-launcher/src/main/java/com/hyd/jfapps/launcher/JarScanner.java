@@ -8,9 +8,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-@Slf4j
 public class JarScanner {
+
+    private final static Logger log = LoggerFactory.getLogger(JarScanner.class);
 
     public static List<File> scanAppJars(String dir) {
         File file = new File(dir);

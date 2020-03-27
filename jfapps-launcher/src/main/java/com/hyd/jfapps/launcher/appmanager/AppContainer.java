@@ -4,7 +4,8 @@ import com.hyd.jfapps.appbase.AppInfo;
 import com.hyd.jfapps.appbase.JfappsApp;
 import com.hyd.jfapps.launcher.*;
 import javafx.scene.image.Image;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.util.Optional;
@@ -14,8 +15,9 @@ import java.util.zip.ZipFile;
 
 import static com.hyd.jfapps.launcher.appmanager.AppManager.GLOBAL_CONTEXT;
 
-@Slf4j
 public class AppContainer {
+
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     private File appFile;
 

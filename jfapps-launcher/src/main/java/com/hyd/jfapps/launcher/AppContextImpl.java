@@ -4,7 +4,8 @@ import com.hyd.jfapps.appbase.AppContext;
 import javafx.application.HostServices;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,8 +15,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Properties;
 
-@Slf4j
 public class AppContextImpl implements AppContext {
+
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     private Image icon;
 

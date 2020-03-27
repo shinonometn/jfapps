@@ -1,6 +1,5 @@
 package com.hyd.jfapps.appbase;
 
-
 import javafx.application.Application;
 import javafx.application.HostServices;
 import javafx.scene.Scene;
