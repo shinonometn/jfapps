@@ -4,7 +4,7 @@ module jfapps.launcher {
     requires javafx.graphics;
     requires javafx.controls;
 
-    requires lombok;
+//    requires lombok;
 
     requires org.apache.commons.lang3;
     requires slf4j.api;
